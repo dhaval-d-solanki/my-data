@@ -1,0 +1,351 @@
+.navbar.top-nav-bar {
+    margin-bottom: 0;
+    top: auto;
+    
+    &.navbar-fixed-top{
+    	z-index: 990
+    }
+    .brand {
+        line-height: $topNavBarHeight;
+        padding: 0px 15px;
+        img {
+            max-height: 35px;
+        }
+    }
+    .navbar-inner {
+        background: $topNavBarBg;
+        padding: 0 15px;
+        
+        @media (max-width: $tablet-max){
+	    	padding: 0;
+	    }
+    }
+    &>.navbar-inner>.nav {
+        &>li {
+            [class^="icomoon-"],
+            [class*=" icomoon-"] {
+                color: $topNavIconClr;
+                &.bigIcon {
+                    font: $icon_font_400_24;
+                    line-height: $topNavBarHeight;
+                }
+            }
+            &.notification-dropdown {
+                &>a {
+                    border-width: 0 1px 0 1px;
+                    padding: 0 16px 0 15px;
+                    border-left: 1px solid $topNavBarBr;
+                    .notification-img-container {
+                        margin: 0 6px;
+                    }
+                }
+                &>.dropdown-menu {
+                    border: 0;
+                    
+                    @media (max-width: $tablet-max){
+				    	right: 0;
+				   	 	width: 300px;
+				    	margin-right: -85px;
+				    }
+                    
+                    .custom-dropdown-wrapper {
+                        
+                        @include box-shadow(0px 0px 8px rgba(44, 61, 77,0.3));
+                        
+                        &.notification {
+                            padding: 10px;
+                            background: $topNavNotificationBg;
+                            .custom-dropdown-container {
+                                .custom-dropdown-header-container {
+                                    padding: 10px;
+                                    color: $topNavNotificationHeaderClr;
+                                    background: $topNavNotificationHeaderBg;
+                                    @include border-top-left-radius(2px);
+                                    @include border-top-right-radius(2px);
+                                    
+                                    a{
+                                        font: $font_700_12;
+                                        color: $topNavNotificationHeaderClr;
+                                        text-decoration: none;
+                                    }
+                                }
+                                
+                                .notification-list{
+                                    list-style: none;
+                                    margin-left: 0;
+                                    
+                                    .notification-item{
+                                        background: $topNavNotificationItemBg;
+                                        padding: 10px;
+                                        
+                                        &:last-child{
+                                            @include border-bottom-left-radius(2px);
+                                            @include border-bottom-right-radius(2px);
+                                        }
+                                        
+                                        &+.notification-item{
+                                            border-top: 1px solid $topNavNotificationItemBr;
+                                        }
+                                        
+                                        .img-container {
+                                            float: left;
+                                    		padding: 0;
+                                    		
+                                    		.dropdown-img {
+		                                        height: 35px;
+		                                        width: 35px;
+		                                        display: inline-block;
+		                                        vertical-align: middle;
+		                                        border-radius: 100%;
+		                                    }
+                                        }
+                                        
+                                        .info-container {
+                                        	padding-left: 45px;
+                                        	p {
+		                                        margin-bottom: 0;
+		                                    }
+		                                    
+		                                    .notification-link-container {
+		                                    
+		                                       @media screen and (min-width: $tablet-min) {
+                                                    min-width: 230px;
+                                                }
+                                                
+                                                padding: 0;
+                                                
+                                                .time-info {
+                                                    font: $font_400_12;
+                                                    margin-top:5px;
+                                                    color: $topNavNotificationItemTimeClr;
+                                                }
+                                                
+                                                a{
+                                                    color: $topNavNotificationItemLinkClr;
+                                                    font: $font_700_14;
+                                                    &:hover, &:focus {
+                                                       color: $topNavNotificationItemLinkClr;
+                                                    }
+                                                }
+		                                    }
+                                        }
+                                    }
+                                }
+                                
+                                /*&.notification{
+                                    &:last-child{
+                                        @include border-bottom-left-radius(2px);
+                                        @include border-bottom-right-radius(2px);
+                                    }
+                                }
+                                
+                                .img-container {
+                                    float: left;
+                                    padding: 0;
+                                    .dropdown-img {
+                                        height: 37px;
+                                        width: 37px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        border-radius: 100%;
+                                    }
+                                }
+                                
+                                .info-container {
+                                    padding-left: 80px;
+                                    p {
+                                        margin-bottom: 0;
+                                    }
+                                    .user-name {
+                                        font-size: 14px;
+                                        margin: 0px;
+                                        text-transform: capitalize;
+                                    }
+                                    .user-desig {
+                                        color: blue;
+                                        font-size: 12px;
+                                    }
+                                    .user-email {
+                                        word-wrap: break-word;
+                                        font-size: 12px;
+                                        color: gray;
+                                    }
+                                    .notification-link-container {
+                                        
+                                        @media screen and (min-width: $tablet-min) {
+                                            min-width: 300px;
+                                        }
+                                        padding:0;
+                                        .time-info {
+                                            font-size: 11px;
+                                        }
+                                        a {
+                                            color: blue;
+                                            font-weight: normal;
+                                            &:hover,
+                                            &:focus {
+                                                color: blue;
+                                            }
+                                        }
+                                    }
+                                }*/
+                            }
+                        }
+                    }
+                }
+            }
+            &.profile-dropdown {
+                &>a {
+                    color: $topNavLinkClr;
+                    
+                    .header-user-name{
+                    	font: $font_400_13;
+                    }
+                }
+                .icomoon-arrow-down {
+                    color: $topNavLinkClr;
+                    font: $icon_font_400_8;
+                }
+                &>.dropdown-menu {
+                    width: 100%;
+                    background: $topNavUserBg;
+                    @include box-shadow(0px 0px 8px rgba(44, 61, 77,0.3));
+                    &>li {
+                        &>a {
+                            color: $topNavLinkClr;
+                            font: $font_400_11;
+                            padding: 10px 10px 10px 15px;
+                            [class^="icomoon-"],
+                            [class*=" icomoon-"] {
+                                color: $topNavUserIconClr;
+                            }
+                            &:hover,
+                            &:focus {
+                                background-color: $topNavUserHoverBg;
+                                background-image: none;
+                            }
+                            .nav-item-label {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.dropdown {
+                &.open {
+                    &>a {
+                        background: $topNavLinkActiveClr;
+                    }
+                }
+                .dropdown-menu {
+                    border-radius: 0;
+                    margin-top: 0;
+                    border-width: 1px 0 0 0;
+                    border-color: rgba(0, 0, 0, 0.1);
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    &:before,
+                    &:after {
+                        border: none;
+                    }
+                }
+            }
+            &>a {
+                &.btn-navbar {
+                    background-color: $topNavBarMenuBtnBg;
+                    background-image: none;
+                    box-shadow: none;
+                    font: $font_400_14;
+                    margin: 0;
+                    display: none;
+                    &.collapsed {
+                        background-color: $topNavBarBg;
+                        ;
+                    }
+                    @media (max-width: $tablet-max) {
+                        display: inline-block;
+                    }
+                }
+                line-height: $topNavBarHeight;
+                height: $topNavBarHeight;
+                padding: 0px 15px;
+                border-left: 1px solid $topNavBarBr;
+                text-shadow: none;
+                display: inline-block;
+                vertical-align: middle;
+                .notification-img-container {
+                    display: inline-block;
+                    position: relative;
+                    .notification-img {}
+                }
+                .notification-badge {
+                    background: $topNavNotificationBadgeBg;
+                    display: block;
+                    position: absolute;
+                    top: 14px;
+                    right: -1px;
+                    line-height: $topNavNotificationBadgeWidth;
+                    height: $topNavNotificationBadgeWidth;
+                    width: $topNavNotificationBadgeWidth;
+                    text-align: center;
+                    color: $topNavNotificationClr;
+                    text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+                    border-radius: 100%;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    vertical-align: baseline;
+                    margin: 0;
+                    font: $font_400_11;
+                    padding: 0;
+                    z-index: 2;
+                }
+                .profile-img {
+                    max-width: $topNavBarProfWidth;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.navbar-static-side-collapse{
+    &>ul{
+    	list-style:none;
+    	padding: 0;
+    	margin: 0;
+    	
+    	li{
+    		border-bottom: 1px solid $sideNavLinkBr;
+    		color: $sideNavLinkClr;
+    		background: $topNavCollapseItemBg;
+    		
+    		font: $font_700_11;
+    		a{
+    			padding: 15px;
+    			display: block;
+    			color: $sideNavLinkClr;
+    			text-decoration: none;
+    			
+    			border-radius: 0;
+    			margin-bottom: 0;
+    			
+    			.nav-label{
+    				margin-left: 10px;
+    			}
+    			&:hover, &:focus{
+    				color: $sideNavLinkClr;
+    			}
+    		}
+    		
+    		&.selected, &:hover{
+    			background: $sideNavCollapseSelectedBg;
+    			color: $sideNavLinkSelectedClr;
+    			
+    			a{
+    				color: $sideNavLinkSelectedClr;
+    			}
+    		}
+    	}
+    }
+}

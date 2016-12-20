@@ -1,0 +1,424 @@
+/* 
+*	Font Configuration
+*/
+
+//Font Family ---------------------------------------------------------------------------------------------
+$fontFamily: 							'Open Sans', sans-serif;
+$arialFontFamily:                       'Arial', sans-serif;
+$iconFontFamily:                        'icomoon';
+
+//Font Weight ---------------------------------------------------------------------------------------------
+$fontWeightLighter:						100;
+$fontWeightNormal:						400;
+$fontWeightMedium:						500;
+$fontWeightBold:						700;
+
+//font-size -----------------------------------------------------------------------------------------------
+$defaultFontsize:						14;
+$lineheightInc:							4;
+$fontSize_8:       						getEmvalue(8,$defaultFontsize)/getEmvalue(8 + $lineheightInc,8);
+$fontSize_10:							getEmvalue(10,$defaultFontsize)/getEmvalue(10 + $lineheightInc,10);
+$fontSize_11:							getEmvalue(11,$defaultFontsize)/getEmvalue(11 + $lineheightInc,11);
+$fontSize2_11:							getEmvalue(11,12)/getEmvalue(11 + $lineheightInc,11);
+$fontSize3_11:							getEmvalue(11,16)/getEmvalue(11 + $lineheightInc,11);
+$fontSize_12:							getEmvalue(12,$defaultFontsize)/getEmvalue(12 + $lineheightInc,12);
+$fontSize2_12:							getEmvalue(12,13)/getEmvalue(12 + $lineheightInc,12);
+$fontSize3_12:							getEmvalue(12,12)/getEmvalue(12 + $lineheightInc,12);
+$fontSize_13:							getEmvalue(13,$defaultFontsize)/getEmvalue(13 + $lineheightInc,13);
+$fontSize_14:							getEmvalue(14,$defaultFontsize)/getEmvalue(14 + $lineheightInc,14);
+$fontSize_16:       					getEmvalue(16,$defaultFontsize)/getEmvalue(16 + $lineheightInc,16);
+$fontSize2_16:							getEmvalue(16,12)/getEmvalue(16 + $lineheightInc,16);
+$fontSize3_16:							getEmvalue(16,11)/getEmvalue(16 + $lineheightInc,16);
+$fontSize_18:            				getEmvalue(18,$defaultFontsize)/getEmvalue(18 + $lineheightInc,18);
+$fontSize_20:	      					getEmvalue(20,$defaultFontsize)/getEmvalue(20 + $lineheightInc,20);
+$fontSize_24:	      					getEmvalue(24,$defaultFontsize)/getEmvalue(24 + $lineheightInc,24);
+$fontSize_30:	      					getEmvalue(30,$defaultFontsize)/getEmvalue(30 + $lineheightInc,30);
+$fontSize_32:							getEmvalue(32,$defaultFontsize)/getEmvalue(32 + $lineheightInc,32);
+$fontSize_36:							getEmvalue(36,$defaultFontsize)/getEmvalue(36 + $lineheightInc,36);
+$fontSize_38:							getEmvalue(38,$defaultFontsize)/getEmvalue(38 + $lineheightInc,38);
+$fontSize_42:							getEmvalue(42,$defaultFontsize)/getEmvalue(42 + $lineheightInc,42);
+$fontSize_48:							getEmvalue(48,$defaultFontsize)/getEmvalue(48 + $lineheightInc,48);
+$headingH1:								fontProperty(normal, $fontWeightBold, $fontSize_16, $fontFamily);
+$headingH2:								fontProperty(normal, $fontWeightBold, $fontSize_14, $fontFamily);
+$headingH3:								fontProperty(normal, $fontWeightBold, $fontSize_12, $fontFamily);
+$headingH4:								fontProperty(normal, $fontWeightNormal, $fontSize_12, $fontFamily);
+$headingH5:								fontProperty(normal, $fontWeightNormal, $fontSize_11, $fontFamily);
+$paragraph:								$headingH4;
+$inputIconfontSize:						getEmvalue(20,$defaultFontsize);
+$tdIconfontSize:						getEmvalue(14,12);
+$defaultFont:							fontProperty(normal, $fontWeightNormal, $fontSize_14, $fontFamily);
+$font_400_10:							fontProperty(normal, $fontWeightNormal, $fontSize_10, $fontFamily);
+$font_100_11:							fontProperty(normal, $fontWeightLighter, $fontSize_11, $fontFamily);
+$font_400_11:							fontProperty(normal, $fontWeightNormal, $fontSize_11, $fontFamily);
+$font2_400_11:							fontProperty(normal, $fontWeightNormal, $fontSize2_11, $fontFamily);
+$font3_400_11:							fontProperty(normal, $fontWeightNormal, $fontSize3_11, $fontFamily);
+$font_700_11:							fontProperty(normal, $fontWeightBold, $fontSize_11, $fontFamily);
+$font_400_12:							fontProperty(normal, $fontWeightNormal, $fontSize_12, $fontFamily);
+$font2_400_12:							fontProperty(normal, $fontWeightNormal, $fontSize2_12, $fontFamily);
+$font_700_12:							fontProperty(normal, $fontWeightBold, $fontSize_12, $fontFamily);
+$font_100_13:							fontProperty(normal, $fontWeightLighter, $fontSize_13, $fontFamily);
+$font_400_13:							fontProperty(normal, $fontWeightNormal, $fontSize_13, $fontFamily);
+$font_700_13:							fontProperty(normal, $fontWeightBold, $fontSize_13, $fontFamily);
+$font_100_14:							fontProperty(normal, $fontWeightLighter, $fontSize_14, $fontFamily);
+$font_400_14:							fontProperty(normal, $fontWeightNormal, $fontSize_14, $fontFamily);
+$font_700_14:							fontProperty(normal, $fontWeightBold, $fontSize_14, $fontFamily);
+$font_400_16:							fontProperty(normal, $fontWeightNormal, $fontSize_16, $fontFamily);
+$font_700_16:							fontProperty(normal, $fontWeightBold, $fontSize_16, $fontFamily);
+$font2_400_16:							fontProperty(normal, $fontWeightNormal, $fontSize2_16, $fontFamily);
+$font_400_18:							fontProperty(normal, $fontWeightNormal, $fontSize_18, $fontFamily);
+$font_700_18:							fontProperty(normal, $fontWeightBold, $fontSize_18, $fontFamily);
+$font_100_24:							fontProperty(normal, $fontWeightLighter, $fontSize_24, $fontFamily);
+$font_400_24:							fontProperty(normal, $fontWeightNormal, $fontSize_24, $fontFamily);
+$font_700_24:							fontProperty(normal, $fontWeightBold, $fontSize_24, $fontFamily);
+$font_400_30:							fontProperty(normal, $fontWeightNormal, $fontSize_30, $fontFamily);
+$font_400_36:							fontProperty(normal, $fontWeightNormal, $fontSize_36, $fontFamily);
+$font_100_48:							fontProperty(normal, $fontWeightLighter, $fontSize_48, $fontFamily);
+$font_400_48:							fontProperty(normal, $fontWeightNormal, $fontSize_48, $fontFamily);
+$icon_font_400_8:						fontProperty(normal, $fontWeightNormal, $fontSize_8, $iconFontFamily);
+$icon_font2_400_16:						fontProperty(normal, $fontWeightNormal, $fontSize2_16, $iconFontFamily);
+$icon_font3_400_16:						fontProperty(normal, $fontWeightNormal, $fontSize3_16, $iconFontFamily);
+$icon_font_400_20:						fontProperty(normal, $fontWeightNormal, $fontSize_20, $iconFontFamily);
+$icon_font_400_24:						fontProperty(normal, $fontWeightNormal, $fontSize_24, $iconFontFamily);
+$arial_font_400_12:                     fontProperty(normal, $fontWeightNormal, $fontSize_12, $arialFontFamily);
+$arial_font_700_12:                     fontProperty(normal, $fontWeightBold, $fontSize_12, $arialFontFamily);
+$arial_font2_400_12:                    fontProperty(normal, $fontWeightNormal, $fontSize3_12, $arialFontFamily);
+$arial_font2_700_12:                    fontProperty(normal, $fontWeightBold, $fontSize3_12, $arialFontFamily);
+$arial_font3_400_12:                    fontProperty(normal, $fontWeightNormal, $fontSize2_12, $arialFontFamily);
+$arial_font3_700_12:                    fontProperty(normal, $fontWeightBold, $fontSize2_12, $arialFontFamily);
+
+
+/* 
+*	Color Configuration
+*/
+
+//Primary  NIU Color -------------------------------------------------------------------------------------------
+
+//$colorPrLiBlue3: 						#efefef;
+//$colorPrLiBlue2: 						#273e74;
+//$colorPrDaBlue2: 						#20335f;
+
+	//Primary updated Color -------------------------------------------------------------------------------------------
+
+$colorPrLiOrange1: 						#ffba00;
+$colorPrDaOrange1: 						#d99e00;
+$colorPrLiGreen1: 						#189a80;
+$colorPrDaGreen1: 						#14836d;
+$colorPrLiBlue1: 						#2a7bb2;
+$colorPrDaBlue1: 						#246997;
+$colorPrLiRed1: 						#d44647;
+$colorPrDaRed1: 						#b43c3c;
+
+//Secondary NIU Color -----------------------------------------------------------------------------------------
+$colorSeLi_e5f2f9: 						#e5f2f9;
+$colorSeLi_e9ebf1: 						#e9ebf1;
+$colorSeLi_fef3ea: 						#fef3ea;
+$colorSeLi_e5e5e5:                      #e5e5e5;
+$colorSeLi_f9f9f9:                      #f9f9f9;
+
+	//Secondary updated Color -----------------------------------------------------------------------------------------
+$colorSeLi_fffbf3: 						#fffbf3;
+$colorSeLi_fff8e7: 						#fff8e7;
+$colorSeLi_f3faf9: 						#f3faf9;
+$colorSeLi_e7f5f2: 						#e7f5f2;
+$colorSeLi_f4f8fb: 						#f4f8fb;
+$colorSeLi_e9f2f7: 						#e9f2f7;
+$colorSeLi_fdf6f6: 						#fdf6f6;
+$colorSeLi_fbecec: 						#fbecec;
+$colorSeLi_d4e5f0: 						#d4e5f0;
+
+
+//Status NIU Primary Color ------------------------------------------------------------------------------------
+//$colorPrLiRed1: 						#e83434;
+//$colorPrDaRed1: 						#be2b2b;
+//$colorPrLiGreen1: 						#7bb62e;
+//$colorPrDaGreen1: 						#659526;
+
+//Status NIU Secondary Color ----------------------------------------------------------------------------------
+$colorSeLi_fdeaea: 						#fdeaea;
+$colorSeLi_f3fbea: 						#f3fbea;
+
+//Neutral Updated Color -------------------------------------------------------------------------------------------
+$colorNeLiGray1: 						#222a35;
+$colorNeDaGray1: 						#1d242d;
+$colorNeLiGray2: 						#2c3d4d;
+$colorNeDaGray2: 						#253442;
+$colorNeLiGray3: 						#959fa7;
+$colorNeDaGray3: 						#7f878e;
+$colorNeLiGray4: 						#d5d9dc;
+$colorNeDaGray4: 						#b5b9bb;
+$colorNeLiGray5: 						#e9ebed;
+$colorNeDaGray5: 						#c6c8ca;
+$colorNeLiGray6: 						#ffffff;
+$colorNeDaGray6: 						$colorNeLiGray5;
+$colorNeBlack:	 						#000000;
+
+//Screen size -------------------------------------------------------------------------------------------
+$desktop-min: 1200px; 
+$tablet-max: 979px;
+$tablet-min: 767px;
+$mobile-max: 480px;
+$mobile-min: 320px;
+
+//Components Color -------------------------------------------------------------------------------------------
+$bgTransparent:							transparent;
+$borderColor: 							$colorNeLiGray5;
+$fontWhite:								$colorNeLiGray6;								
+$headerBg: 								$colorNeLiGray6;
+$bodyBg:								$colorNeLiGray6;							
+$navigationActive:						$colorPrLiOrange1;
+$navigationActiveFont:					$colorNeLiGray6;
+$navigationInactive:					$colorNeLiGray5;
+$navigationInactiveFont: 				$colorNeLiGray1;
+$footerBg:								$colorNeLiGray1;
+$footerColor:							$colorNeLiGray3;
+$portletHeaderBg:						$colorPrLiBlue1;
+$portletBodyBg:							$colorNeLiGray6;
+$portletIconColor:						rgba($colorNeLiGray6, 0.6);
+$inputborderColor: 						$colorNeLiGray4;
+$inputIconborderColor:					$colorNeLiGray4;
+$inputIconBg:							$colorNeLiGray6;
+$inputIconFontColor:					$colorNeDaGray4;
+$inputFontcolor:						$colorNeLiGray2;
+$inputFocusborder:						$colorPrLiBlue1;
+$inputDisabledBrColor: 					$colorNeLiGray4;
+$inputDisabledFontColor:				$colorNeLiGray3;
+$inputDisabledBg:						$colorNeLiGray5;
+$inputPlaceHolderClr:					$colorNeLiGray4;
+$labelFontcolor:						$colorNeLiGray2;
+$error:									$colorPrLiRed1;
+$successFont:							$colorPrDaGreen1;
+$successBorder:							$colorPrLiGreen1;
+$dropDownBottomborder:					$colorPrLiOrange1;
+$dropDownFontColor:						$colorNeLiGray1;
+$dropDownHoverFontColor:				$colorNeBlack;
+$dropDownHoverBg:						$colorNeLiGray5;
+$dropDownMenuSeparator:					$colorNeLiGray4;
+$panelBg:								$colorNeLiGray6;
+$panelBorder:							$colorNeLiGray4;
+$panelHeadingFontcolor:					$colorPrLiBlue1;
+$panelBlueHeadingFontcolor:				$colorNeLiGray6;
+$panelBlueHeadingBordercolor:			$colorPrLiBlue1;
+$panelBlueHeadingBorderBottomcolor:		$colorPrDaBlue1;
+$panelBodyFontcolor:					$colorNeLiGray1;
+$panelHeaderBg:							$colorNeLiGray5;
+$panelHeaderBlueBg:						$colorPrLiBlue1;
+$panelSubRowBr:							$colorNeLiGray5;
+$breadcrumbFontColor:					$colorPrLiBlue1;
+$breadcrumbActiveFontColor:				$colorNeLiGray2;
+$infoGroupBg:							$colorNeLiGray6;
+$infoGroupTitleBorderColor:				$colorNeLiGray4;
+$infoGroupTitleFontColor:				$colorNeLiGray1;
+$infoGroupDescFontColor:				$colorNeLiGray6;
+$infoGroupDescDefaultBrColor:			$colorPrLiOrange1;
+$infoGroupDescDefaultBg:				$colorPrLiOrange1;
+$infoGroupDescBlueBrColor:				$colorPrLiBlue1;
+$infoGroupDescBlueBg:					$colorPrLiBlue1;
+$infoGroupStaticBg:						$bgTransparent;
+$infoGroupDescStaticDefaultBg:			$colorNeLiGray6;
+$infoGroupDescStaticDefaultBrColor:		$colorNeLiGray4;
+$infoGroupDescStaticDefaultTitleClr:	$colorNeLiGray1;
+$infoGroupTitleStaticDefaultBg:			$colorNeLiGray5;
+$noteDefaultBgColor:					$colorSeLi_e5f2f9;
+$noteDefaultBrColor:					rgba($colorPrLiBlue1, 0.2);
+$noteTitleDescFontColor:				$colorPrDaBlue1;
+$btnGrayBg:								$colorNeLiGray6;
+$btnGrayBorder:							$colorSeLi_d4e5f0;
+$btnGrayFontColor:						$colorNeLiGray2;
+$btnOrangeBg:							$colorPrLiOrange1;
+$btnHoverOrangeBg:						$colorPrDaOrange1;
+$btnOrangeFontColor:					$colorNeLiGray6;
+$btnBlueBg:								$colorPrLiBlue1;
+$btnHoverBlueBg:						$colorPrDaBlue1;
+$btnBlueFontColor:						$colorNeLiGray6;
+$btnGreenBg:							$colorPrLiGreen1;
+$btnHoverGreenBg:						$colorPrDaGreen1;
+$btnGreenFontColor:						$colorNeLiGray6;
+$btnRedBg:								$colorPrLiRed1;
+$btnHoverRedBg:							$colorPrDaRed1;
+$btnRedFontColor:						$colorNeLiGray6;
+$btnGrayDaBg:								$colorNeLiGray3;
+$btnHoverGrayDaBg:						$colorNeDaGray3;
+$btnGrayDaFontColor:						$colorNeLiGray6;
+$popoverBgColor:						$colorNeLiGray5;
+$popoverBorderColor:					$colorNeLiGray4;
+$popoverTitleFontColor:					$colorPrLiBlue1;
+$popoverBodyFontColor: 					$colorNeLiGray1;
+$datePickerBr:							#e0e0e0;
+$datePickerHeaderFontColor:				$colorPrLiBlue1;
+$datePickerTableBorderColor:			$colorNeLiGray4;
+$datePickerPrevNextDayColor:			$colorNeLiGray3;
+$datePickerDayFontColor:				$colorNeBlack;
+$datePickerSelectedDayFontColor:		$colorNeLiGray6;
+$datePickerSelectedDayBg:				$colorPrLiGreen1;
+$datePickerHoverDayBg:					$colorNeLiGray4;
+$datePickerHoverDayFontColor:			$colorNeBlack;
+$timePickerFontColor:					$colorNeBlack;
+$timePickerHoverBg:						$colorNeLiGray5;
+$modalHeaderBg:                         $colorPrLiBlue1;
+$modalHeaderFontClr:                    $fontWhite;
+$modalHeaderCloseClr:                   $fontWhite;
+$modalBodyFontClr:                      $colorNeLiGray1;
+$modalBodyWarningClr:                   $colorPrLiRed1;
+$modalFooterBg:                         $colorNeLiGray5;
+$toggleHeaderBg:                        $colorNeLiGray2;
+$toggleHeaderCollapsedBg:               $colorNeLiGray3;
+$toggleHeaderFontClr:                   $fontWhite;
+$toggleContentBg:                       $colorNeLiGray6;
+$toggleContentFontClr:                  $colorNeLiGray1;
+$toggleContentBr:                  		$colorSeLi_e9f2f7;
+$searchContainerHeaderBg:               $colorSeLi_d4e5f0;
+$searchContainerHeaderFontClr:          $colorNeLiGray2;
+$searchContainerColFontClr:             $colorNeLiGray2;
+$searchContainerColLinkFontClr:         $colorPrLiBlue1; 
+$searchContainerHighlightFontClr:       $colorPrLiOrange1;
+$searchContainerRowBg:                  $colorNeLiGray6;
+$searchContainerRowHoverBg:             $colorSeLi_f9f9f9;
+$searchContainerOddRowBg:               $colorNeLiGray6;
+$searchContainerSelectedRowBg:          $colorSeLi_f4f8fb;
+$searchContainerBorderClr:              $colorSeLi_e9f2f7;
+$searchContainerPagiantionBg:           $colorNeLiGray6;
+$searchContainerPaginationBorder:       $colorSeLi_e5f2f9;
+$searchContainerPaginationBorder:       $colorNeLiGray4;
+$searchContainerPaginationClr:          $colorNeLiGray2;
+$searchContainerPaginationPageLinkBr:   $colorSeLi_e9f2f7;
+$searchContainerPaginationPageLinkBg:  	$colorSeLi_e9f2f7;
+$searchContainerPaginationPageLinkClr:  $colorNeLiGray2;
+$searchContainerInnerTableBg:			$colorSeLi_f4f8fb;
+$PaginationDropdownHoverBg:  			$colorPrLiBlue1;
+$PaginationDropdownHoverClr:  			$colorNeLiGray6;
+
+$searchContainerPagerBorder:            $colorNeLiGray4;
+$searchContainerPagerFontClr:  			$colorNeLiGray1;
+$searchContainerPagerFirstLastBg:       $colorPrLiBlue1;
+$searchContainerPagerFirstLastFontClr:  $colorNeLiGray6;
+$searchContainerLabelValueLabelBg:  	$colorSeLi_f4f8fb;
+$searchContainerTrashIconClr:			$colorPrLiRed1;
+$searchContainerEditIconClr:			$colorPrLiBlue1;
+$searchContainerUserIconClr:			$colorPrLiBlue1;
+$searchContainerFullColBg1:				$colorPrLiBlue1;
+$searchContainerFullColBg2:				$colorPrLiOrange1;
+$searchContainerFullColClr:				$colorNeLiGray6;
+$fileUploadInputBorder: 				$colorNeLiGray4;
+$fileUploadInputClr: 					$colorNeBlack;
+$fileUploadInputBg: 					$colorNeLiGray6;
+$fileUploadAddonBorder:					$colorPrLiBlue1;
+$fileUploadAddonClr:					$colorNeLiGray6;
+$fileUploadAddonBg:						$colorPrLiBlue1;
+$actionContainer:      					$colorNeLiGray5;
+$loginBGColor:							$colorNeLiGray6;
+$loginFooterParaharaphText:				$colorNeBlack;
+$loginHeaderBg:							$colorNeLiGray5;
+$loginHeaderText:						$colorPrDaBlue1;
+$loginLinkText:							$colorNeLiGray1;
+$loginForgotLink:						$colorNeLiGray1;
+$loginBoxshdow:							rgba($colorNeBlack, 0.5);
+$resetpasswordText:						$colorNeLiGray1;
+$resetpasswordtitle:					$colorPrLiBlue1;
+$autoCompleteListHoverBg:				$colorNeLiGray5;
+$autoCompleteListSelectBg:				$colorPrLiBlue1;
+$autoCompleteListHoverClr:				$colorNeLiGray1;
+$listSelectClr:							$colorNeLiGray6;
+$listFontClr:							$colorNeLiGray1;
+$listSmallImgWidth:						16px;
+$listSmallImgHeight:					16px;
+$listImgWidth:							16px;
+$listImgHeight:							16px;
+$listBorder:							$colorNeLiGray4;
+$listBg:								$colorNeLiGray6;
+$listHoverBg:							$colorNeLiGray5;
+$listSelectBg:							$colorPrLiBlue1;
+$popupDialogBg: 						$bgTransparent;
+$progressbarfontcolorWhite:				$colorNeLiGray6;
+$progressbarcomplited:					$colorPrLiBlue1;
+$progressbaractive:						$colorPrLiOrange1;
+$progressbarinactive:					$colorNeDaGray4;
+$progressbarinactivetext:				$colorNeLiGray2;
+$progressbarinactivetext:				$colorNeLiGray2;
+$treeMenuLiPlusPath:					"../images/icon-plus.png";
+$treeMenuLiMinusPath:					"../images/icon-minus.png";
+$treeMenuLiBg:							$colorNeLiGray1;
+$treeMenuLiHoverBg:						$colorNeDaGray1;
+$treeMenuLiActiveHoverBg:				$colorNeLiGray2;
+$treeMenuLiClr:							$colorNeLiGray6;
+$treeMenuLiBr:							$colorNeLiGray2;
+$toolTipBg:								$colorNeLiGray1;
+$wellBg:								$colorSeLi_f4f8fb;
+$wellBr:								$colorSeLi_e9f2f7;
+$wellSmallLabelOfBigTextClr:			$colorNeLiGray2;
+$wellSmallLabelBigTextClr:				$colorPrLiBlue1;
+$wellSmallLabelBigTextContainerBr:		$wellBr;
+$iconGreen:								$colorPrLiGreen1;
+$iconRed:								$colorPrLiRed1;
+$popUpparagraphFontSize:				$font_400_13;
+
+$topNavBarHeight: 						60px;
+$topNavBarBg:							$colorNeLiGray2;
+$topNavBarBr:							rgba( $colorNeLiGray6, .1 );
+$topNavBarMenuBtnBg:					#222a35;
+$topNavBarProfWidth:					32px;
+$topNavNotificationBadgeWidth:			15px;
+$topNavLinkClr:							$colorNeLiGray6;
+$topNavLinkActiveClr:					#222a35;
+$topNavIconClr:							#959fa7;
+$topNavUserHoverBg:						$colorNeLiGray2;
+$topNavUserBg:							#222a35;
+$topNavUserIconClr:						$colorNeLiGray6;
+$topNavNotificationBadgeBg:				$colorNeLiGray6;
+$topNavNotificationClr:					$colorNeLiGray2;
+$topNavNotificationBg:					#222a35;
+$topNavNotificationHeaderClr:			#2a7bb2;
+$topNavNotificationHeaderBg:			#e9f2f7;
+$topNavNotificationItemBg:				$colorNeLiGray6;
+$topNavNotificationItemBr:				#e9f2f7;
+$topNavNotificationItemTimeClr:			#2a7bb2;
+$topNavNotificationItemLinkClr:			$colorNeLiGray2;
+$topNavCollapseItemBg:					#ffffff;
+$sideNavCollapseSelectedBg:				#e9f2f7;
+$pageWrapperBg:							#e9f2f7;
+$sideNavWidth:							220px;
+$sideNavLinkClr:						$colorNeLiGray2;
+$sideNavLinkSelectedBg:					rgba(#e9f2f7, 0.5);
+$sideNavLinkSelectedClr:				#2a7bb2;
+$sideNavLinkBr:							#e9f2f7;
+$breadCrumbBg:							$bgTransparent;
+$breadCrumbLiClr:						$colorNeLiGray2;
+$breadCrumbLiLastClr:					#959fa7;
+$pageWrapperBr: 						#ffffff;
+$loginLogoHeaderBg: 					$colorNeLiGray2;
+$loginLogoLinkClr: 						$colorNeLiGray2;
+
+$tabLinkBr:								$bgTransparent;
+$tabLinkClr:							$colorNeLiGray2;
+$tabLinkBg:								$bgTransparent;
+$tabActiveLinkClr:						$colorPrDaBlue1;
+$tabActiveLinkBg:						$colorNeLiGray6;
+$tabContentBg:							$colorNeLiGray6;
+$tabContentClr:							$colorNeLiGray2;
+
+/******************** Author: Aarif Puthawala ********************/
+
+$colorYellow:							#ffba00;
+$colorRed:								#d44647;
+$colorGreen:							#189a80;
+$colorBlue:								#2a7bb2;
+$smallWidgetBackColor:					#ffffff;
+$smallWidgetFooterButtonBackColor:		$colorSeLi_f4f8fb;
+$smallWidgetFooterButtonBackHoverClr:	#e9ebed;
+
+$smallWidgetFooterBorderColor:			#e9f2f7;
+$smallWidgetFooterTextColor:			#2c3d4d;
+$quickStatisticsBackColor:				$colorSeLi_f4f8fb;
+$topCashListItemBackColor:				#ffffff;
+$topCashListItemBorderColor:			#e9f2f7;
+$topCashListItemTextColor:				#2c3d4d;
+$topCashListItemAmountTextColor:		#2a7bb2;
+$topCashListItemBackHoverColor:			$colorSeLi_f4f8fb;
+
+
+
+
+
+
+
+
+/************************ End of Section *************************/

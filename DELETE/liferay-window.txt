@@ -1,0 +1,29 @@
+AUI().use('aui-base','aui-io-plugin-deprecated','liferay-util-window','liferay-portlet-url','aui-dialog-iframe-deprecated', function(A) {
+		A.one('#<portlet:namespace />routeRequest').on('click', function(event){
+			var countryId = document.getElementById("<portlet:namespace />countryId").value;
+			var destinationId = document.getElementById("<portlet:namespace />destinationId").value;
+			var url = '${popupURL}';
+			if(countryId){
+				url = url.replace('c_id',countryId);
+			}
+			if(destinationId){
+				url = url.replace('d_id',destinationId);
+			}
+			var popUpWindow=Liferay.Util.openWindow({
+				dialog: {
+				centered: true,
+				constrain2view: true,
+				cssClass: 'customModal customDialogModal',
+				modal: true,
+				resizable: false,
+				width: 1400,
+				boundingBox : "#routeReqPopup"
+				},
+				id:'<portlet:namespace/>route',             
+                uri: url,
+                title: 'Route Request'
+			});
+		
+		});
+	}
+);

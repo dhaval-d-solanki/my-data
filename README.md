@@ -1,3 +1,3 @@
 "# my-data" 
-http://www.bachpan.com/Modern-Indian-Girl-Names-Ke.aspx
+https://github.com/mgp25/Chat-API/wiki/WhatsAPI-Documentation
 

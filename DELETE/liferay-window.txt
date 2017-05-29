@@ -27,3 +27,34 @@ AUI().use('aui-base','aui-io-plugin-deprecated','liferay-util-window','liferay-p
 		});
 	}
 );
+
+
+"friday sardar"
+
+sardar to thane train
+thane to ghansoli cab
+
+
+--
+"saturday pagoda"
+train to borivali
+thepla, dahi, milk, apple
+auto to gorai
+gorai to pagoda boat
+canteen: sandwich, tea
+food court: wadapav, tea
+marve to malad bus
+malad to inorbit auto
+inorbit to malad cab
+malad dinner
+malad to ghansoli train
+ghansoli to flat auto
+
+
+water bottles
+-- 
+
+"sunday movie day"
+
+balaji to marine train
+marine to home train

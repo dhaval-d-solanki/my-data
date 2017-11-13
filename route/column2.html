@@ -1,0 +1,29 @@
+<h2>{{message}}</h2>
+
+<table class="table table-hover table-striped table-bordered">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Cost</td>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr ng-repeat="scotch in scotches">
+            <td>{{ scotch.name }}</td>
+            <td>${{ scotch.price }}</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+<div class="row">
+    <div class="col-md-6">
+        <div ui-view="columnTwoC1"></div>
+    </div>
+
+    <div class="col-md-6">
+        <div ui-view="columnTwoC2"></div>
+    </div>
+
+</div>

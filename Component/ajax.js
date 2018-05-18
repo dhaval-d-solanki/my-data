@@ -41,7 +41,7 @@ ajaxServiceCallback = function (responseObjData, callbackObject) {
 };
 
 ajaxRequest = function (url, postDataObj, _callback, methodType ) {
-	var methodType = methodType === "GET" ? methodType : "POST";
+	var methodType = !!methodType === false ? methodType : "POST";
 	//url, orgCallback, callback, parameters, methodType, isAsync
 	ajaxService(url, { callback : _callback, context : this }, postDataObj, methodType, true);	
 }

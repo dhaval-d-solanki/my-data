@@ -1,0 +1,11 @@
+$gry: black;
+
+html{
+	background: gray;
+	border: 1px solid $gry;
+	
+	body{
+		background: green;
+		color: white;
+	}
+}

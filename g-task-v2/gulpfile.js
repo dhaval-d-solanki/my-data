@@ -9,20 +9,36 @@ var rename 		= require('gulp-rename');
 var uglify = require('gulp-uglify');
 var del = require('del');
 
+// Main Files
+var CORE_JS = ['/js/core/jquery-3.5.1.slim.min.js', '/js/core/popper.min.js', '/js/core/bootstrap.min.js'];
+var JS = ['/js/main/main.js', '/js/main/grandparent.js', '/js/main/parent.js'];
+var CORE_CSS = ['/css/core/bootstrap.min.css'];
+var CSS = ['/css/other/other.css'];
+
+
 // JS
-var SRC_CORE_JS = ['src/js/core/jquery.js', 'src/js/core/popper.min.js', 'src/js/core/bootstrap.min.js'];
-var TMP_CORE_JS = ['tmp/js/core/jquery.js', 'tmp/js/core/popper.min.js', 'tmp/js/core/bootstrap.min.js'];
-var SRC_JS = ['src/js/main/main.js', 'src/js/main/grandparent.js', 'src/js/main/parent.js'];
-var TMP_JS = ['tmp/js/main/main.js', 'tmp/js/main/grandparent.js', 'tmp/js/main/parent.js'];
+var SRC_CORE_JS = CORE_JS.map(ele => 'src'+ele);
+var TMP_CORE_JS = CORE_JS.map(ele => 'tmp'+ele);
+var SRC_JS = JS.map(ele => 'src'+ele);
+var TMP_JS = JS.map(ele => 'tmp'+ele);
 
 // CSS
-var SRC_CORE_CSS = ['src/css/core/bootstrap.min.css'];
-var TMP_CORE_CSS = ['tmp/css/core/bootstrap.min.css'];
-var SRC_CSS = ['src/css/other/other.css'];
-var TMP_CSS = ['tmp/css/other/other.css'];
+var SRC_CORE_CSS = CORE_CSS.map(ele => 'src'+ele);
+var TMP_CORE_CSS = CORE_CSS.map(ele => 'tmp'+ele);
+var SRC_CSS = CSS.map(ele => 'src'+ele);
+var TMP_CSS = CSS.map(ele => 'tmp'+ele);
 
 // SCSS
-var SRC_MAIN_SCSS = 'src/scss/main.scss';
+var SRC_MAIN_SCSS = ['src/scss/main.scss'];
+
+/* var SRC_CORE_JS = ['src/js/core/jquery.js', 'src/js/core/popper.min.js', 'src/js/core/bootstrap.min.js'];
+var TMP_CORE_JS = ['tmp/js/core/jquery.js', 'tmp/js/core/popper.min.js', 'tmp/js/core/bootstrap.min.js'];
+var SRC_JS = ['src/js/main/main.js', 'src/js/main/grandparent.js', 'src/js/main/parent.js'];
+var TMP_JS = ['tmp/js/main/main.js', 'tmp/js/main/grandparent.js', 'tmp/js/main/parent.js']; */
+/* var SRC_CORE_CSS = ['src/css/core/bootstrap.min.css'];
+var TMP_CORE_CSS = ['tmp/css/core/bootstrap.min.css'];
+var SRC_CSS = ['src/css/other/other.css'];
+var TMP_CSS = ['tmp/css/other/other.css']; */
 
 
 var paths = {

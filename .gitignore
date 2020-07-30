@@ -2,4 +2,6 @@
 
 #packages
 node_modules/
+tmp/
+PSD/
 DSP-UI/node_modules/

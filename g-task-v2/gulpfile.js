@@ -9,14 +9,30 @@ var rename 		= require('gulp-rename');
 var uglify = require('gulp-uglify');
 var del = require('del');
 
+// JS
+var SRC_CORE_JS = ['src/js/core/jquery.js', 'src/js/core/popper.min.js', 'src/js/core/bootstrap.min.js'];
+var TMP_CORE_JS = ['tmp/js/core/jquery.js', 'tmp/js/core/popper.min.js', 'tmp/js/core/bootstrap.min.js'];
+var SRC_JS = ['src/js/main/main.js', 'src/js/main/grandparent.js', 'src/js/main/parent.js'];
+var TMP_JS = ['tmp/js/main/main.js', 'tmp/js/main/grandparent.js', 'tmp/js/main/parent.js'];
+
+// CSS
+var SRC_CORE_CSS = ['src/css/core/bootstrap.min.css'];
+var TMP_CORE_CSS = ['tmp/css/core/bootstrap.min.css'];
+var SRC_CSS = ['src/css/other/other.css'];
+var TMP_CSS = ['tmp/css/other/other.css'];
+
+// SCSS
+var SRC_MAIN_SCSS = 'src/scss/main.scss';
+
+
 var paths = {
   src: 'src/**/*',
   srcHTML: 'src/**/*.html',
-  srcCSSCore: ['src/css/core/bootstrap.min.css'],
-  srcCSS: ['src/css/other/other.css'],
-  srcSCSS: 'src/scss/main.scss',
-  srcJSCore: ['src/js/core/jquery.js', 'src/js/core/bootstrap.js'],
-  srcJS: ['src/js/main/main.js', 'src/js/main/grandparent.js', 'src/js/main/parent.js'],
+  srcCSSCore: SRC_CORE_CSS,
+  srcCSS: SRC_CSS,
+  srcSCSS: SRC_MAIN_SCSS,
+  srcJSCore: SRC_CORE_JS,
+  srcJS: SRC_JS,
   tmp: 'tmp',
   tmpCSSCoreFolder: 'tmp/css/core',
   tmpCSSFolder: 'tmp/css/other',
@@ -24,11 +40,11 @@ var paths = {
   tmpJSFolder: 'tmp/js/main',
   tmpJSCoreFolder: 'tmp/js/core',
   tmpIndex: 'tmp/index.html',
-  tmpCSSCore: ['tmp/css/core/bootstrap.min.css'],
-  tmpCSS: ['tmp/css/other/other.css'],
+  tmpCSSCore: TMP_CORE_CSS,
+  tmpCSS: TMP_CSS,
   tmpSCSS: ['tmp/css/main.css'],
-  tmpJSCore: ['tmp/js/core/jquery.js', 'tmp/js/core/bootstrap.js'],
-  tmpJS: ['tmp/js/main/main.js', 'tmp/js/main/grandparent.js', 'tmp/js/main/parent.js'],
+  tmpJSCore: TMP_CORE_JS,
+  tmpJS: TMP_JS,
   dist: 'dist',
   distCSSFolder: 'dist/css',
   distCSSCoreFolder: 'dist/css/core',

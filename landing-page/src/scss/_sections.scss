@@ -1,0 +1,160 @@
+.section-spacing{
+    margin-top:300px;
+}
+
+.landing-section{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-section {
+    height: 1430px;
+    background-image: url("/images/top-bg-without-text.png");
+
+    .top-section-text {
+        .top-image {
+            position: relative;
+            right: -50px;
+            top: 55px;
+            max-width: 435px;
+        }
+        .highlight-text {
+            background-color: $top-section-highlight-bg-color;
+            color: $top-section-highlight-text-color;
+        }
+    }
+}
+
+.benefit-section{
+    height: 967px;
+    background-image: url("/images/benefit-bg.png");
+
+    .benefit-detail{
+        max-width: 500px;
+        margin-top: 60px;
+        .benefit-icon-container{
+            border: 7px solid $benefit-icon-border;
+            padding: 20px;
+            img{
+                width: 50px;
+            }
+        }
+    }
+}
+
+.consume-section{
+    height: 830px;
+    background-image: url("/images/consume-bg.png");
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575.98px) {
+    
+    .section-spacing{
+        margin-top:150px;
+    }
+
+    .top-section {
+        height: 540px;
+        .top-section-text {
+            .top-image {
+                right: -15px;
+                top: 35px;
+                max-width: 285px;
+            }
+        }
+    }
+
+    .benefit-section{
+        height: 630px;
+        background-size: contain;
+        .benefit-detail{
+            .benefit-icon-container{
+                img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-device-width: 576px) and  (max-width: 767.98px) {
+
+    .section-spacing{
+        margin-top:150px;
+    }
+
+    .top-section {
+        height: 630px;
+        .top-section-text {
+            .top-image {
+                right: -25px;
+                top: 35px;
+                max-width: 295px;
+            }
+        }
+    }
+
+    .benefit-section{
+        height: 530px;
+        background-size: contain;
+        .benefit-detail{
+            .benefit-icon-container{
+                img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-device-width: 768px) and (max-width: 991.98px) {
+
+    .section-spacing{
+        margin-top:150px;
+    }
+
+    .top-section {
+        height: 730px;
+        .top-section-text {
+            .top-image {
+                right: -25px;
+                top: 35px;
+                max-width: 295px;
+            }
+        }
+    }
+
+    .benefit-section{
+        height: 530px;
+        background-size: contain;
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-device-width: 992px) and (max-width: 1199.98px) {
+
+    .section-spacing{
+        margin-top:150px;
+    }
+
+    .top-section {
+        height: 830px;
+        .top-section-text {
+            .top-image {
+                right: -25px;
+                top: 35px;
+                max-width: 295px;
+            }
+        }
+    }
+
+    .benefit-section{
+        height: 630px;
+        background-size: contain;
+    }
+}

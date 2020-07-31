@@ -1,10 +1,26 @@
-$gry: black;
+@import "./variables";
+@import "./colors";
+@import "common";
+@import "./top_strip";
+@import "./sections";
 
 html{
-	background: #dddddd;
+	background: $body-bg;
 	
 	body{
-		background: #dddddd;
-		color: black;
+		background: $body-bg;
+		color: $body-text;
 	}
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { }
+
+// Small devices (landscape phones, less than 768px)
+@media (min-device-width: 576px) and  (max-width: 767.98px) { }
+
+// Medium devices (tablets, less than 992px)
+@media (min-device-width: 768px) and (max-width: 991.98px) { }
+
+// Large devices (desktops, less than 1200px)
+@media (min-device-width: 992px) { }

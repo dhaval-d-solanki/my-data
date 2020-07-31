@@ -1,0 +1,57 @@
+.bigger-font {
+    font-size: 4em;
+}
+.big-font {
+    font-size: 3.5em;
+}
+.medium-font {
+    font-size: 2em;
+}
+.small-font {
+    font-size: 3em;
+}
+
+.header-text {
+    color: $header-text-color;
+}
+
+.lh-1{
+    line-height: 1;
+}
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .big-font{
+        font-size: 2.5em;
+    }
+    .medium-font {
+        font-size: 1.5em;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-device-width: 576px) and  (max-width: 767.98px) {
+    .big-font{
+        font-size: 2.5em;
+    }
+
+    .medium-font {
+        font-size: 1.5em;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-device-width: 768px) and (max-width: 991.98px) {
+    .big-font{
+        font-size: 2.5em;
+    }
+
+    .medium-font {
+        font-size: 1.5em;
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-device-width: 992px) {}

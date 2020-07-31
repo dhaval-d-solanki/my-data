@@ -44,6 +44,7 @@ var TMP_CSS = ['tmp/css/other/other.css']; */
 var paths = {
   src: 'src/**/*',
   srcHTML: 'src/**/*.html',
+  srcImages: 'src/**/*.png',
   srcCSSCore: SRC_CORE_CSS,
   srcCSS: SRC_CSS,
   srcSCSS: SRC_MAIN_SCSS,
@@ -55,6 +56,7 @@ var paths = {
   tmpSCSSFolder: 'tmp/css',
   tmpJSFolder: 'tmp/js/main',
   tmpJSCoreFolder: 'tmp/js/core',
+  tmpImagesFolder: 'tmp/js/main',
   tmpIndex: 'tmp/index.html',
   tmpCSSCore: TMP_CORE_CSS,
   tmpCSS: TMP_CSS,
@@ -109,8 +111,12 @@ gulp.task('js', function () {
   return gulp.src(paths.srcJS).pipe(gulp.dest(paths.tmpJSFolder));
 });
 
+gulp.task('images', function () {
+  return gulp.src(paths.srcImages).pipe(gulp.dest(paths.tmp));
+});
 
-gulp.task('copy', ['html', 'css:core', 'css:other', 'sass', 'jsCore', 'js']);
+
+gulp.task('copy', ['html', 'images', 'css:core', 'css:other', 'sass', 'jsCore', 'js']);
 //END SET 1
 
 //START SET 2

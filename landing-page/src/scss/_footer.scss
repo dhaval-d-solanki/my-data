@@ -34,6 +34,15 @@
             }
         }
 
+        .main-container-icon-strip{
+
+            &.add-padding{
+                .main-container-icon-item{
+                    padding-right: 15px;
+                }
+            }
+        }
+
         .newletter-form{
             margin-top: 30px;
             background: #fff;

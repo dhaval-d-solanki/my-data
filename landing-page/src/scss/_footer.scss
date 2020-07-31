@@ -10,7 +10,7 @@
     .main-container{
         color: $footer-main-container-text;
         border-bottom: 1px solid $footer-info-container-border-color;
-        
+
         .main-container-header{
             position: relative;
             &:after{
@@ -28,8 +28,34 @@
             list-style: none;
             li{
                 a{
-                    color: $footer-main-container-text
+                    color: $footer-main-container-text;
+                    font-size: 0.7em;
                 }
+            }
+        }
+
+        .newletter-form{
+            margin-top: 30px;
+            background: #fff;
+            padding: 6px 10px;
+            position: relative;
+
+            .email{
+                border: 0;
+                padding: 4px;
+                width: calc(100% - 110px);
+            }
+
+            .submit{
+                background-color: #29363c;
+                color: $white;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                border: 0;
+                font-size: 16px;
+                padding: 0 20px;
             }
         }
     }

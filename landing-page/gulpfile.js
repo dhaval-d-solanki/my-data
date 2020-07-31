@@ -11,9 +11,10 @@ var del = require('del');
 
 // Main Files
 var CORE_JS = ['/js/core/jquery-3.5.1.slim.min.js', '/js/core/popper.min.js', '/js/core/bootstrap.min.js'];
-var JS = ['/js/main/main.js', '/js/main/grandparent.js', '/js/main/parent.js'];
+// var JS = ['/js/main/main.js', '/js/main/grandparent.js', '/js/main/parent.js'];
+var JS = [''];
 var CORE_CSS = ['/css/core/bootstrap.min.css'];
-var CSS = ['/css/other/other.css'];
+var CSS = ['/css/other/animate.min.css'];
 
 
 // JS

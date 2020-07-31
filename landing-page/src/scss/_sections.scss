@@ -28,6 +28,7 @@
 .benefit-section{
     height: 967px;
     background-image: url("/images/benefit-bg.png");
+    background-position: top center;
 
     .benefit-detail{
         max-width: 500px;
@@ -45,6 +46,55 @@
 .consume-section{
     height: 830px;
     background-image: url("/images/consume-bg.png");
+    background-position: top center;
+
+    .consume-text-header{
+        margin-bottom: 50px;
+    }
+}
+
+.shop-section{
+    height:450px;
+    background-image: url("/images/shop-bg.png");
+    background-position: top center;
+
+    .shop-btn{
+        background-color: $white;
+        border-color: $white;
+        color: $shop-btn-color;
+        box-shadow: none;
+
+        &:focus{
+            border-color: $white;
+        }
+
+        &:active, &:hover {
+            &:not(:disabled), &:not(.disabled):active{
+                background-color: $shop-btn-color;
+                border-color: $shop-btn-color;
+                color: $white;
+            }
+        }
+    }
+}
+
+.protect-section{
+    height: 1098px;
+    background-image: url("/images/protect-bg.png");
+    background-position: top center;
+
+    .protect-section-text {
+        /* .top-image {
+            position: relative;
+            right: -50px;
+            top: 55px;
+            max-width: 435px;
+        }
+        .highlight-text {
+            background-color: $top-section-highlight-bg-color;
+            color: $top-section-highlight-text-color;
+        } */
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -66,7 +116,8 @@
     }
 
     .benefit-section{
-        height: 630px;
+        min-height: 430px;
+        height: auto;
         background-size: contain;
         .benefit-detail{
             .benefit-icon-container{
@@ -77,7 +128,34 @@
         }
     }
 
-    
+    .consume-section{
+        height:auto;
+        .consume-text-header{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .how-to-item-text-container{
+            margin-top: -30px;
+            margin-bottom: 30px;
+
+            .how-to-item{
+                .how-to-item-img{
+                    img{
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+    .shop-section{
+        height:250px;
+    }
+
+    .protect-section{
+        height: 300px;
+    }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -109,6 +187,29 @@
             }
         }
     }
+
+    .consume-section{
+
+        height:auto;
+        
+        .consume-text-header{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .how-to-item-text-container{
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .shop-section{
+        height:350px;
+    }
+
+    .protect-section{
+        height: 500px;
+    }
 }
 
 // Medium devices (tablets, less than 992px)
@@ -133,6 +234,27 @@
         height: 530px;
         background-size: contain;
     }
+
+    .consume-section{
+        height:auto;
+        .consume-text-header{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .how-to-item-text-container{
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .shop-section{
+        height:350px;
+    }
+
+    .protect-section{
+        height: 700px;
+    }
 }
 
 // Large devices (desktops, less than 1200px)
@@ -156,5 +278,13 @@
     .benefit-section{
         height: 630px;
         background-size: contain;
+    }
+
+    .shop-section{
+        height:350px;
+    }
+
+    .protect-section{
+        height: 800px;
     }
 }

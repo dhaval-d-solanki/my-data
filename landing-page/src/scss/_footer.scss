@@ -67,6 +67,10 @@
                 padding: 0 20px;
             }
         }
+
+        .find-us-container{
+            
+        }
     }
 
     .info-container{
@@ -86,3 +90,40 @@
         }
     }
 }
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .landing-footer{
+        .main-container{
+            .find-us-container{
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (min-device-width: 576px) and  (max-width: 767.98px) {
+    .landing-footer{
+        .main-container{
+            .find-us-container{
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (min-device-width: 768px) and (max-width: 991.98px) {
+    .landing-footer{
+        .main-container{
+            .find-us-container{
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-device-width: 992px) { }

@@ -82,10 +82,17 @@
             width: 100%;
 
             .info-container-col{
+                text-align: center;
+                margin-bottom: 0.6em;
                 &:last-child{
                     border-right: none;
                 }
                 border-right: 1px solid $footer-info-container-border-color;
+
+                .info-container-img{
+                    min-width: 50px;
+                    text-align: center;
+                }
             }
         }
     }
@@ -102,6 +109,26 @@
 
             .newletter-container{
                 margin-top: 1.5rem;
+            }
+
+            .main-container-icon-strip{
+                &.we-accept{
+                    .main-container-icon-item{
+                        img{
+                            width: 60px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .info-container{
+            .info-container-row{
+                width: auto;
+                .info-container-col{
+                    text-align: left;
+                }
             }
         }
     }
